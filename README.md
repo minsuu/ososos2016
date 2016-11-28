@@ -1,12 +1,15 @@
 j
 ```c
 #include <stdio.h>
-int main()
-{
+int main(int argc, char *argv[]) {
+	if (argc<3){
+		printf("not enough arguments!");
+		return 0;
+	}
 	FILE *in, *out;
 	int n;
-	in = fopen("input.txt","r");
-	out = fopen("output.txt","w");
+	in = fopen(argv[1],"r");
+	out = fopen(argv[2],"w");
 	fscanf(in,"%d",&n);
 	fprintf(out,"%d",n);
 	fclose(in);
