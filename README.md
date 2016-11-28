@@ -1,4 +1,11 @@
-j
+```shell
+$ gcc file.c -o file
+$ echo 100 > input.txt
+$ ./file input.txt output.txt
+$ cat output.txt
+100
+$
+```
 ```c
 #include <stdio.h>
 int main(int argc, char *argv[]) {
