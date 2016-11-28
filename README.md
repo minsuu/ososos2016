@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 int maxSub(int a[], int n){
-	int i,j,k,ret=0;
+	int i,j,k,ret=a[0]; // assume n>0
 	for(i=0;i<n;i++){
 		for(j=i+1;j<n;j++){
 			int sum=0;
