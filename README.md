@@ -1,5 +1,22 @@
-
+j
 ```c
+#include <stdio.h>
+int main()
+{
+	FILE *in, *out;
+	int n;
+	in = fopen("input.txt","r");
+	out = fopen("output.txt","w");
+	fscanf(in,"%d",&n);
+	fprintf(out,"%d",n);
+	fclose(in);
+	fclose(out);
+	return 0;
+}
+
+
+
+
 #include <stdio.h>
 
 int maxSub(int a[], int n){
